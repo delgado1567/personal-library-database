@@ -24,7 +24,7 @@ Lname varchar(30) not null);
 
 CREATE TABLE Books (
 ISBN13 bigint(13) not null,
-Format char(9) not null DEFAULT 'paperback',
+Format varchar(9) not null DEFAULT 'paperback',
 Edition tinyint(2) not null DEFAULT 1,
 Pages mediumint(5) not null,
 ISBN10 int(10) not null,
