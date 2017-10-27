@@ -20,7 +20,8 @@ CREATE TABLE Authors (
 ID int not null,
 Fname varchar(30) not null,
 Mname varchar(30) DEFAULT '',
-Lname varchar(30) not null);
+Lname varchar(30) not null,
+PRIMARY KEY(ID));
 
 CREATE TABLE Books (
 ISBN13 bigint(13) not null,
