@@ -7,22 +7,22 @@ ALTER TABLE Books
 DROP CONSTRAINT FK_Publisher;
 
 ALTER TABLE Book_Authors
-DROP CONSTRAINT FK_Book;
+DROP CONSTRAINT FK_Author_Book;
 
 ALTER TABLE Book_Authors
-DROP CONSTRAINT FK_Author;
+DROP CONSTRAINT FK_Book_Author;
 
 ALTER TABLE Book_Genres
-DROP CONSTRAINT FK_Book;
+DROP CONSTRAINT FK_Genre_Book;
 
 ALTER TABLE Book_Genres
-DROP CONSTRAINT FK_Author;
+DROP CONSTRAINT FK_Book_Genre;
 
 ALTER TABLE Book_Details
-DROP CONSTRAINT FK_Book;
+DROP CONSTRAINT FK_Detail_Book;
 
 ALTER TABLE Book_Details
-DROP CONSTRAINT FK_Detail;
+DROP CONSTRAINT FK_Book_Detail;
 
 DROP TABLE Locations;
 
@@ -41,5 +41,8 @@ DROP TABLE Book_Authors;
 DROP TABLE Book_Genres;
 
 DROP TABLE Book_Details;
+
+Use master;
+Go
 
 DROP DATABASE personal_library;
